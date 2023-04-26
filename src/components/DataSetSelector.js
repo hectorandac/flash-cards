@@ -6,7 +6,7 @@ const DataSetSelector = ({ setFlashcards, flashcards }) => {
   const [newDataSetName, setNewDataSetName] = useState("");
 
   useEffect(() => {
-    fetch("http://10.147.20.229:3001/flashcards")
+    fetch("http://10.147.20.151:3023/flashcards")
       .then(response => response.json())
       .then((data) => {
         console.log(data);

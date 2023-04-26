@@ -1,0 +1,60 @@
+.flashcard-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+  }
+  
+  .flashcard-form.dark {
+    background-color: #2c2c2c;
+  }
+  
+  .flashcard-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .flashcard-form textarea,
+  .flashcard-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .flashcard-form textarea {
+    width: calc(100% - 20px);
+  }
+  
+  .flashcard-form.dark textarea,
+  .flashcard-form.dark select {
+    background-color: #444;
+    color: #ffffff;
+    border-color: #666;
+  }
+  
+  .flashcard-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .flashcard-form button:hover {
+    background-color: #45a049;
+  }
+  

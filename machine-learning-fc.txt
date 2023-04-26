@@ -1,0 +1,60 @@
+21. Decision Trees: A ML algorithm that recursively splits the data based on feature values, creating a tree-like structure with branches and leaf nodes.
+22. Random Forests: An ensemble method that constructs multiple decision trees and aggregates their predictions to improve accuracy and reduce overfitting.
+23. Support Vector Machines (SVM): A supervised learning algorithm that finds the best separating hyperplane between classes by maximizing the margin between them.
+24. Naive Bayes: A probabilistic classifier based on Bayes' theorem that assumes independence between input features, often used for text classification.
+25. K-Nearest Neighbors (KNN): A non-parametric, instance-based learning algorithm that predicts new data points based on the majority class of their K nearest neighbors.
+26. Neural Networks: A ML model inspired by the human brain, composed of interconnected layers of artificial neurons, suitable for complex tasks like image recognition.
+27. Activation Functions: Non-linear functions applied to the output of a neuron in a neural network, determining the neuron's output based on its input.
+28. Convolutional Neural Networks (CNN): A type of neural network designed for image processing, using convolutional layers to detect spatial features in the input data.
+29. Recurrent Neural Networks (RNN): A type of neural network designed to handle sequential data, incorporating feedback loops to maintain internal state over time.
+30. Long Short-Term Memory (LSTM): A type of RNN that addresses the vanishing gradient problem, allowing the network to learn long-range dependencies in data.
+31. Autoencoders: An unsupervised neural network architecture used for dimensionality reduction, feature extraction, and data compression by learning to reconstruct its input.
+32. Principal Component Analysis (PCA): A dimensionality reduction technique that projects data onto a lower-dimensional subspace while preserving maximum variance.
+33. Anomaly Detection: Identifying rare or unusual data points that deviate significantly from the majority, potentially indicating errors or malicious activities.
+34. Transfer Learning: Using pre-trained models or their components as a starting point for a new task, leveraging knowledge gained from previous tasks to improve performance.
+35. Data Augmentation: Generating additional training data by applying various transformations to existing examples, increasing model robustness and reducing overfitting.
+36. One-Hot Encoding: A method to represent categorical variables as binary vectors, where each category is represented by a unique binary vector with a single '1' and the rest '0's.
+37. Ensemble Methods: Combining predictions from multiple models to improve accuracy and robustness, including techniques like bagging, boosting, and stacking.
+38. Grid Search: An exhaustive search method for hyperparameter tuning that evaluates all possible combinations within a specified range.
+39. Early Stopping: A regularization technique that stops training when model performance on a validation set stops improving, preventing overfitting.
+40. Imbalanced Data: A dataset where the distribution of classes is uneven, potentially causing biased predictions and requiring special techniques to address the imbalance.
+41. K-Means Clustering: A partition-based clustering algorithm that assigns data points to K clusters by iteratively updating cluster centroids and minimizing the within-cluster sum of squared distances.
+42. DBSCAN (Density-Based Spatial Clustering of Applications with Noise): A density-based clustering algorithm that groups data points based on their proximity and density, while identifying noise points.
+43. Hierarchical Clustering: A clustering method that builds a tree-like structure of nested clusters by either successively merging or splitting clusters based on similarity or distance.
+44. t-Distributed Stochastic Neighbor Embedding (t-SNE): A dimensionality reduction technique particularly useful for visualization, preserving local structures and distances between data points in a lower-dimensional space.
+45. GANs (Generative Adversarial Networks): A generative model composed of two competing neural networks, the generator and discriminator, used for generating realistic data samples.
+46. Precision-Recall Curve: A graphical representation of the trade-off between precision and recall for different classification thresholds, useful for evaluating classifiers with imbalanced datasets.
+47. ROC Curve (Receiver Operating Characteristic): A graphical representation of the trade-off between true positive rate (sensitivity) and false positive rate (1-specificity) for different classification thresholds.
+48. AUC-ROC (Area Under the ROC Curve): A single-value metric that measures the overall performance of a classifier, with a higher value indicating better performance.
+49. BERT (Bidirectional Encoder Representations from Transformers): A pre-trained transformer-based language model that can be fine-tuned for various NLP tasks, achieving state-of-the-art performance.
+50. Transformers: A type of neural network architecture for sequence data, using self-attention mechanisms to capture long-range dependencies without recurrence.
+51. Sequence-to-Sequence Models: A type of deep learning architecture for tasks where input and output sequences have different lengths, such as machine translation and text summarization.
+52. Attention Mechanisms: Components of neural networks that allow models to weigh the importance of different input elements, improving performance on sequence-based tasks.
+53. Collaborative Filtering: A recommendation system technique that predicts user preferences based on the behavior of similar users or the similarity of items.
+54. Content-Based Filtering: A recommendation system technique that predicts user preferences based on the features of items and their similarity to items the user has interacted with.
+55. Multi-Armed Bandit: A reinforcement learning problem that models the exploration-exploitation trade-off, where an agent must balance between exploring unknown options and exploiting known rewards.
+56. Semi-Supervised Learning: A ML method that combines a small amount of labeled data with a larger amount of unlabeled data, leveraging both supervised and unsupervised techniques.
+57. Feature Selection: The process of identifying the most relevant features for a ML model, reducing dimensionality and improving performance.
+58. Out-of-Bag (OOB) Error: An error estimation technique for ensemble methods like Random Forests, using samples not included in the bootstrap sample for a tree to evaluate its performance.
+59. Confusion Matrix: A matrix representation of a classifier's performance, showing true positive, true negative, false positive, and false negative predictions.
+60. Time Series Analysis: The analysis of data collected over time, often using ML techniques to forecast future values, detect trends, or identify patterns.
+61. Active Learning: A learning strategy where the model actively queries an oracle (usually a human) for labels on specific instances, aiming to improve performance with minimal labeled data.
+62. Online Learning: A ML method where the model is trained incrementally as new data becomes available, allowing it to adapt to changing patterns and concepts.
+63. Batch Learning: A ML method where the model is trained on a fixed dataset, not adapting to new data or patterns after training.
+64. Incremental Learning: Similar to online learning, a ML method where the model updates its knowledge based on newly available data, maintaining a balance between old and new information.
+65. Multi-Task Learning: A learning strategy that trains a model to perform multiple tasks simultaneously, sharing representations and improving performance on individual tasks.
+66. Meta-Learning: A learning strategy where the model learns to learn, acquiring meta-knowledge that can be applied to new tasks with minimal training.
+67. Transfer Learning (Deep): A learning strategy where a deep neural network is pre-trained on a large dataset (such as ImageNet), then fine-tuned for a specific task with a smaller dataset.
+68. Curriculum Learning: A learning strategy that presents training examples to the model in a structured order, starting with simpler concepts and progressing to more complex ones.
+69. Adversarial Training: A technique to improve the robustness of a model by training it on adversarial examples, which are modified inputs designed to fool the model.
+70. Self-Supervised Learning: A learning paradigm that leverages unlabeled data to create supervised learning tasks, where the model learns by predicting parts of the input data.
+71. Zero-Shot Learning: A learning approach that enables a model to generalize to new, unseen classes without any labeled examples, based on their relationship with known classes.
+72. One-Shot Learning: A learning approach that enables a model to recognize new objects or classes based on very few (or just one) labeled examples.
+73. Few-Shot Learning: A learning approach that enables a model to generalize to new tasks with limited labeled examples by leveraging prior knowledge from related tasks.
+74. Federated Learning: A distributed learning approach where models are trained on multiple devices, with local data, and model updates are aggregated in a central server.
+75. Multi-Instance Learning: A learning setting where a model learns from bags of instances, with each bag having a single label, but the label assignment for individual instances is unknown.
+76. Multi-Label Learning: A learning setting where a model learns to predict multiple labels for a single instance, allowing for complex relationships between labels and features.
+77. Multi-Output Learning: A learning setting where a model learns to predict multiple outputs for a single instance, each output corresponding to a different task or aspect of the data.
+78. Reinforcement Learning with Function Approximation: A type of reinforcement learning where an approximator, such as a neural network, is used to represent the value function or policy.
+79. Inverse Reinforcement Learning: A learning approach that infers the reward function of an expert demonstrator from observed behavior, enabling an agent to learn optimal policies.
+80. Imitation Learning: A learning approach where an agent learns to perform a task by observing and mimicking the behavior of an expert demonstrator.

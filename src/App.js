@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import FlashcardForm from "./components/FlashcardForm";
+import FlashcardInterface from "./components/FlashcardInterface";
+import DarkModeToggle from "./components/DarkModeToggle";
 
 function App() {
+  const [flashcards, setFlashcards] = useState(null);
+  const [displayMode, setDisplayMode] = useState("mixed");
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${darkMode ? "dark-mode" : ""}`}>
+      <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+
+      {flashcards ? (
+        <FlashcardInterface flashcards={flashcards} initialDisplayMode={displayMode} />
+      ) : (
+        <FlashcardForm setFlashcards={setFlashcards} displayMode={displayMode} setDisplayMode={setDisplayMode} isDarkMode={darkMode} />
+      )}
     </div>
   );
 }
